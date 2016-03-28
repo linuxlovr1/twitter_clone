@@ -1,6 +1,6 @@
 $(document).ready ->
 
-  @('.flash').show ->
+  $('.flash').show ->
     flash = $(@)
     setTimeout ->
       flash.slideToggle()
