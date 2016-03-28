@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  get 'dashboard/index'
-
-  get 'landing/show'
-
   # Root route
   root 'landing#show'
 
@@ -12,8 +8,14 @@ Rails.application.routes.draw do
       }
 
   # Resource routes
+  resources :tweets
+  resources :profile, only: [:show, :edit, :update] do 
+    resources :address
+  end
+
 
   # Get routes
+  get 'dashboard/index'
 
   # POST routes 
 

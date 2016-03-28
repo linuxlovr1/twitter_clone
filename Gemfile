@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'paperclip'
+gem 'will_paginate-bootstrap'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -28,7 +29,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 
 group :test do 
-  gem 'database_cleaner'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
   gem 'capybara'
