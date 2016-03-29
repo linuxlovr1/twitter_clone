@@ -35,6 +35,7 @@ group :test do
   gem 'chromedriver-helper'
   gem 'simplecov'
 
+
 end
 
 group :production do 
@@ -50,6 +51,7 @@ group :development, :test do
   gem 'better_errors'
   gem 'populator'
   gem 'faker'
+  gem 'selenium-webdriver'
 end
 
 group :development do

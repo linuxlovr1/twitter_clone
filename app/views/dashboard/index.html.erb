@@ -11,9 +11,9 @@
   </div>
   <div class="panel-body">
     <%= tweet.body %>
-    <%= time_ago_in_words(tweet.created_at) %>  
     </div>
-</div>
+    <%= time_ago_in_words(tweet.created_at) %>  
+  </div>
     <% end %>
   <% else %>
    <h3>No Tweets yet, Tweet it out</h3>

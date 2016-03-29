@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'tweets/show'
+
+  get 'tweets/new'
+
+  get 'tweets/edit'
+
   # Root route
   root 'landing#show'
 
@@ -8,7 +14,7 @@ Rails.application.routes.draw do
       }
 
   # Resource routes
-  resources :tweets
+  resources :tweets, except: :index
   resources :profile, only: [:show, :edit, :update] do 
     resources :address
   end
